@@ -11,7 +11,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v5
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: test
+      - run: npm test
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
